@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.98.2",
+    "@types/express": "^5.0.1",
+    "archiver": "^7.0.1",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}

@@ -1,0 +1,75 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build Solana Contract",
+        "type": "shell",
+        "command": "cargo build-sbf",
+        "options": {
+          "env": {
+            "RUST_BACKTRACE": "1"
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "presentation": {
+          "reveal": "always",
+          "panel": "dedicated",
+          "showReuseMessage": false,
+          "clear": true,
+          "focus": true
+        },
+        "problemMatcher": ["$rustc"]
+      },
+      {
+        "label": "Build Solana Contract (Offline)",
+        "type": "shell",
+        "command": "cargo build-sbf --offline",
+        "group": "build",
+        "presentation": {
+          "reveal": "always",
+          "panel": "dedicated",
+          "clear": true
+        },
+        "problemMatcher": ["$rustc"]
+      },
+      {
+        "label": "Update Cargo Dependencies",
+        "type": "shell",
+        "command": "cargo update",
+        "group": "none",
+        "presentation": {
+          "reveal": "always",
+          "panel": "dedicated",
+          "clear": true
+        },
+        "problemMatcher": []
+      },
+      {
+        "label": "Build Rust Project",
+        "type": "shell",
+        "command": "cargo build",
+        "group": "build",
+        "presentation": {
+          "reveal": "always",
+          "panel": "dedicated",
+          "clear": true
+        },
+        "problemMatcher": ["$rustc"]
+      },
+      {
+        "label": "Run Development Server",
+        "type": "shell",
+        "command": "npm run dev",
+        "group": "test",
+        "presentation": {
+          "reveal": "always",
+          "panel": "dedicated",
+          "clear": true
+        },
+        "problemMatcher": []
+      }
+    ]
+  }

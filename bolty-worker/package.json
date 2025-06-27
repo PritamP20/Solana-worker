@@ -1,0 +1,16 @@
+{
+  "name": "reva-social",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "bun-types": "^1.0.0"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.95.2",
+    "borsh": "^0.7.0"
+  }
+}
+  
